@@ -1,0 +1,28 @@
+* {
+    font-family: 'Yahfie Heavy';
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-image {
+    width: 15%;
+}
+
+.task_btn {
+    background: url('img/cube.png');
+    cursor: pointer;
+    width: 40px;
+}
+
+.completed-task {
+    color: gray;
+    text-decoration: line-through;
+}
+
+@font-face {
+    font-family: 'Yahfie Heavy';
+    src: url('fonts/Yahfie.ttf');
+    font-weight: 900;
+}

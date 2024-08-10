@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container my-5 shadow rounded">
+            <div class="text-center pt-3">
+                <img class="text-image" src="{% static 'img/to-do-list.png'  %}" alt="To Do List">
+            </div>
+            <div class="d-flex justify-content-center align-items-start">
+                <div class="col-md-6">
+                    {% for task in tasks %}
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="col-auto my-2 text-center">
+                                <input class="task_btn me-3" type="image" src="{% static 'img/cube.png' %}" alt="Cube" onclick="toggleTask(this, '{{ forloop.counter0 }}')">
+                            </div>
+                            <div id="task-{{ forloop.counter0 }}" class="fs-3 my-2 text-justify">{{ task }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            
+                <div class="col-md-5">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="d-flex flex-column text-center justify-content-center align-items-center">
+                            <div class="col-md-10 text-center fs-1 px-3">
+                                <label for="id_task" class="form-label">{{ form.task.label }}</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input class="form-control fs-2 mb-3" type="text" name="task" id="id_task" placeholder="Введите новую задачу" style="width: 100%; height: 50px">
+                            </div>
+                            <div class="col-md-10">
+                                <button class="btn btn-outline-secondary my-3 fs-3 w-100" type="submit">Добавить задачу</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleTask(imgElem, taskIndex){
+            const taskDiv = document.getElementById('task-' + taskIndex)
+            if (imgElem.src.includes('cube.png')) {
+                imgElem.src = "{% static 'img/cube-completed.png' %}"
+            } else {
+                imgElem.src = "{% static 'img/cube.png' %}"
+            }
+            taskDiv.classList.toggle('completed-task')
+        }
+    </script>
+</body>
+</html>
