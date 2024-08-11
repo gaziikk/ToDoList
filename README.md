@@ -1,4 +1,4 @@
-# ToDoList
+<h1 align="center">ToDoList</h1>
 
 <h2 align="center">
     <img src="https://img.shields.io/badge/Python-3.11.9-blue?logo=Python&logoColor=blue">
