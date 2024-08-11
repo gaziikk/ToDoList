@@ -22,6 +22,6 @@ A simple task management application. The interface resembles a regular list in 
 
 ## Media materials
 <p align="center">
-    <img src="./readme_assets/1.png" align="center" alt="To Do List screenshot">
-    <img src="./readme_assets/animation.gif" align="center" alt="To Do List animation">
+    <img src="./readme_assets/1.png" width="700" align="center" alt="To Do List screenshot"><br><br>
+    <img src="./readme_assets/animation.gif" width="700" align="center" alt="To Do List animation">
 </p>
