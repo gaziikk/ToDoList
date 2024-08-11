@@ -1,5 +1,4 @@
 # ToDoList
- Simple interface, easy addition of tasks and interesting design - TodoList.
 
 <h2 align="center">
     <img src="https://img.shields.io/badge/Python-3.11.9-blue?logo=Python&logoColor=blue">
@@ -17,3 +16,6 @@
 5. Install ```packages and modules```: ```pip install -r requirements.txt```
 7. Run project: ```python manage.py runserver```
 8. Run the migrations: ```python.exe manage.py migrate```
+
+## Short description
+A simple task management application. The interface resembles a regular list in notepad. There is a form where you can add new tasks. When you complete a task, just click on the box next to it to mark it as completed.
