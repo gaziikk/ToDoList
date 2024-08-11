@@ -13,6 +13,7 @@
 1. Clone this repository: ```git clone https://github.com/gaziikk/ToDoList.git ```
 2. Install ```virtualenv``` : ```python -m venv .venv```
 3. Activate ```virtualenv``` : ```.venv/scripts/activate```
-4. Install ```packages and modules```: ```pip install -r requirements.txt```
-5. cd into ```to_do_list```: ```cd to_do_list```.
+4. Change directory into ```to_do_list```: ```cd to_do_list```.
+5. Install ```packages and modules```: ```pip install -r requirements.txt```
 7. Run project: ```python manage.py runserver```
+8. Run the migrations: ```python.exe manage.py migrate```
