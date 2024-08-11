@@ -20,7 +20,8 @@
 ## Short description
 A simple task management application. The interface resembles a regular list in notepad. There is a form where you can add new tasks. When you complete a task, just click on the box next to it to mark it as completed.
 
-## Screenshots
+## Media materials
 <p align="center">
     <img src="./readme_assets/1.png" align="center" alt="To Do List screenshot">
+    <img src="./readme_assets/animation.gif" align="center" alt="To Do List animation">
 </p>
